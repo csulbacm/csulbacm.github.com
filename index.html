@@ -2,11 +2,54 @@
 <html>
 	<head>
 		<title>Welcome to the ACM</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="skrollr.min.js"></script>
 	</head>
 	<body>
+		<article id="console">
+			<div class="console-black">
+				<div class="hero-content">		
+				<div class="terminal">
+					<span class="terminal-line"></span>
+					<span class="terminal-line"></span>
+					<span class="terminal-line"></span>
+					<span class="terminal-line"></span>
+					<span class="terminal-line">$ cat &gt; hello</span>
+					<span class="terminal-line"> print "Hello World!" </span>
+					<span class="terminal-line"> ask("What is your name?") </span>
+					<span class="terminal-line">$ ./hello </span>
+					<span class="terminal-line"></span>
+					<span class="terminal-line"> Hello World! </span>
+					<span class="terminal-line"> What is your name? ACM<span class="blink">_</span></span>
+				</div>											
+				
+				<div
+					class="name-card"
+					data-0="opacity: .001; transform:scale(.8) rotate(-20deg);"
+					data-500="opacity: 1; transform:scale(1) rotate(5deg);opacity:1;"
+					>
+					<div class="top">
+						<span>Hello, my name is</span>
+					</div>
+					<div class="name">
+						ACM
+					</div>
+				</div>
+				
+			</div>
+			</div>
+		</article>
+		<article>
+			
+			<div class="hero-content">
+				
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, doloremque. Numquam eos vel, porro laudantium magnam atque aut saepe recusandae quod. Enim cupiditate quaerat est maiores, eum culpa rerum ducimus?</p>
+			</div>
+		</article>
 		<article></article>
 		<article></article>
-		<article></article>
-		<article></article>
+		<script>
+			var s = skrollr.init();
+		</script>
 	</body>
 </html>
