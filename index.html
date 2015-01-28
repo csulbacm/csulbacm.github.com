@@ -2,14 +2,14 @@
 <html>
 	<head>
 		<title>Welcome to the ACM</title>
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="stylesheets/style.css">
 		<script src="skrollr.min.js"></script>
 	</head>
 	<body>
-		<article id="console">
+		<article id="console" data-0="background-color: rgb(54,54,54);" data-500="background-color:rgb(255,255,255);">
 			<div class="console-black">
 				<div class="hero-content">		
-				<div class="terminal">
+				<div class="terminal" data-0="opacity:1;" data-450="opacity:.001;">
 					<span class="terminal-line"></span>
 					<span class="terminal-line"></span>
 					<span class="terminal-line"></span>
@@ -17,14 +17,14 @@
 					<span class="terminal-line">$ cat &gt; hello</span>
 					<span class="terminal-line"> print "Hello World!" </span>
 					<span class="terminal-line"> ask("What is your name?") </span>
-					<span class="terminal-line">$ ./hello </span>
 					<span class="terminal-line"></span>
+					<span class="terminal-line">$ ./hello </span>
+					
 					<span class="terminal-line"> Hello World! </span>
-					<span class="terminal-line"> What is your name? ACM<span class="blink">_</span></span>
+					<span class="terminal-line"> What is your name? ACM<span class="blink">|</span></span>
 				</div>											
 				
-				<div
-					class="name-card"
+				<div class="name-card"
 					data-0="opacity: .001; transform:scale(.8) rotate(-20deg);"
 					data-500="opacity: 1; transform:scale(1) rotate(5deg);opacity:1;"
 					>
@@ -39,15 +39,33 @@
 			</div>
 			</div>
 		</article>
-		<article>
+		<article class="infoBlock blue">
 			
 			<div class="hero-content">
-				
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, doloremque. Numquam eos vel, porro laudantium magnam atque aut saepe recusandae quod. Enim cupiditate quaerat est maiores, eum culpa rerum ducimus?</p>
+				<div id="leftImagePanel"></div>
+				<div id="rightTextPanel">
+				<p>Next General Body Meeting: <br> Wednesday, Feb 4, 2015 <br> @ 2pm in ECS 304</p>
+				<span>Can't make the meeting? No biggie. Feel free to stop <br>by our office (EN3 110) at anytime</span>
+				</div>
 			</div>
 		</article>
-		<article></article>
-		<article></article>
+		
+		<article class="infoBlock purple">
+			<div id="leftTextPanel">
+				<p>Check out the CSULB ACM GitHub repo<br> Feel free to contribute :)</p>
+				<button onclick="location.href='https://github.com/csulbacm'">Click meh!</button>
+			</div>
+				
+			<div id="rightImagePanel"></div>
+		</article>
+		<article class="infoBlock officers">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</article>
+		<footer>CSULB ACM Spring 2015</footer>
 		<script>
 			var s = skrollr.init();
 		</script>
