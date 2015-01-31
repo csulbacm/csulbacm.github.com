@@ -1,0 +1,270 @@
+/* line 3, ../sass/style.scss */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 10, ../sass/style.scss */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #333;
+}
+
+/* line 14, ../sass/style.scss */
+.hero-content {
+  width: 960px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* line 26, ../sass/style.scss */
+.blue {
+  background: url("../images/meeting_bg.jpg") center center fixed no-repeat;
+  background-size: 100%;
+  text-shadow: rgba(0, 0, 0, 0.4) 0px 0px 3px;
+}
+
+/* line 36, ../sass/style.scss */
+.purple {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2M2NDRmYyIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzU4NTZkNiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #c644fc), color-stop(100%, #5856d6));
+  background-image: -moz-linear-gradient(#c644fc, #5856d6);
+  background-image: -webkit-linear-gradient(#c644fc, #5856d6);
+  background-image: linear-gradient(#c644fc, #5856d6);
+}
+
+/* line 47, ../sass/style.scss */
+#leftImagePanel {
+  background: url("../images/purfect.jpg") no-repeat;
+  width: 40%;
+  float: left;
+}
+
+/* line 53, ../sass/style.scss */
+#rightImagePanel {
+  width: 40%;
+  float: right;
+  height: 100%;
+  background-size: 100%;
+  margin-top: 50px;
+  z-index: 0;
+}
+/* line 58, ../sass/style.scss */
+#rightImagePanel img {
+  width: 80%;
+  margin: 10%;
+}
+
+/* line 71, ../sass/style.scss */
+#rightTextPanel {
+  width: 59%;
+  float: right;
+  text-align: center;
+  float: right;
+  margin-top: 20%;
+}
+/* line 75, ../sass/style.scss */
+#rightTextPanel span {
+  font-size: .7em;
+  line-height: 50%;
+}
+
+/* line 81, ../sass/style.scss */
+#leftTextPanel {
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+
+/* line 87, ../sass/style.scss */
+#console {
+  color: #fff;
+  position: realtive;
+}
+/* line 89, ../sass/style.scss */
+#console .console-black {
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  padding-top: 1px;
+}
+/* line 100, ../sass/style.scss */
+#console .terminal {
+  font-size: 48px;
+  z-index: 0;
+}
+/* line 105, ../sass/style.scss */
+#console .terminal span.terminal-line {
+  font-family: monospace;
+  display: block;
+  height: 36px;
+  margin: 15px 0;
+}
+/* line 115, ../sass/style.scss */
+#console .name-card {
+  background: #fff;
+  border-radius: 5px;
+  width: 500px;
+  height: 300px;
+  border: 6px #fff solid;
+  margin: 0 auto;
+  position: absolute;
+  left: 215px;
+  bottom: -50px;
+  color: #fff;
+  z-index: 100;
+}
+/* line 129, ../sass/style.scss */
+#console .name-card .top {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  background: #af0000;
+  text-align: center;
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-weight: 200;
+  font-size: 45px;
+  padding: 15px 20px;
+}
+/* line 140, ../sass/style.scss */
+#console .name-card .name {
+  height: 185px;
+  border-bottom: 5px #555 solid;
+  display: block;
+  width: 480px;
+  margin: 20px 10px;
+  content: '.';
+  color: #333;
+  font-size: 170px;
+  text-align: center;
+}
+
+/* line 155, ../sass/style.scss */
+article {
+  width: 100%;
+  height: 500px;
+  background: #ddd;
+}
+
+/* line 163, ../sass/style.scss */
+footer {
+  text-align: center;
+  color: #ffcb02;
+  background: #222;
+  padding: 20px 0;
+}
+
+/* Effects */
+/* Blinking */
+/* line 172, ../sass/style.scss */
+.blink {
+  color: #08ef0c;
+  -webkit-animation-name: blinker;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-name: blinker;
+  -moz-animation-duration: 1s;
+  -moz-animation-timing-function: linear;
+  -moz-animation-iteration-count: infinite;
+  animation-name: blinker;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@-moz-keyframes blinker {
+  0% {
+    opacity: 1.0;
+  }
+  50% {
+    opacity: 0.0;
+  }
+  100% {
+    opacity: 1.0;
+  }
+}
+@-webkit-keyframes blinker {
+  0% {
+    opacity: 1.0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1.0;
+  }
+}
+@keyframes blinker {
+  0% {
+    opacity: 1.0;
+  }
+  50% {
+    opacity: 0.0;
+  }
+  100% {
+    opacity: 1.0;
+  }
+}
+/* line 209, ../sass/style.scss */
+.infoBlock {
+  height: 600px;
+  z-index: 2;
+  display: inline-block;
+  margin-bottom: -4px;
+  font-size: 1.7em;
+  color: #F7F7F7;
+  line-height: 130%;
+}
+
+/* line 219, ../sass/style.scss */
+.officers div {
+  width: 19.3%;
+  height: 100%;
+  position: relative;
+  border: 1px solid black;
+  display: inline-block;
+}
+
+/* line 227, ../sass/style.scss */
+h2 {
+  text-transform: uppercase;
+  font-style: bold;
+}
+
+/* line 232, ../sass/style.scss */
+.social-call {
+  float: left;
+  width: 44%;
+  margin: 20px 3%;
+  height: 460px;
+  padding-top: 1px;
+}
+
+/* line 240, ../sass/style.scss */
+a.button {
+  width: 300px;
+  background: #3e9cbf;
+  padding: 8px 14px 10px;
+  border: 1px solid #3e9cbf;
+  /*style the text*/
+  font-size: 1.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-style: bold;
+  text-shadow: 0 -1px 0px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  -webkit-box-shadow: inset 0px 1px 0px #3e9cbf, 0px 2px 0px 0px #205c73, 0px 2px 5px #999;
+  -moz-box-shadow: inset 0px 1px 0px #3e9cbf, 0px 2px 0px 0px #205c73, 0px 2px 5px #999;
+  box-shadow: inset 0px 1px 0px #3e9cbf, 0px 2px 0px 0px #205c73, 0px 2px 5px #999;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+/* line 261, ../sass/style.scss */
+a.button:hover, a.button:focus {
+  color: #dfe7ea;
+  /*reduce the size of the shadow to give a pushed effect*/
+}
