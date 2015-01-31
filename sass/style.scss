@@ -7,7 +7,10 @@ html, body {
 	height:100%;
 }
 
-
+body {
+	font-family: 'Open Sans', sans-serif;
+	background: #333;
+}
 .hero-content  {
 	width: 960px;
 	margin: 0 auto;
@@ -23,7 +26,10 @@ html, body {
 .blue{
 		//background-color: rgb(56,97,173);	
 		//background-color: rgb(72,137,210);		
-		@include background-image(linear-gradient(#1D62F0, #1AD6FD));
+		// @include background-image(linear-gradient(#1D62F0, #1AD6FD));
+		background:url('../images/meeting_bg.jpg') center center fixed no-repeat;
+		background-size:100%;
+		text-shadow:rgba(0,0,0,.4) 0px 0px 3px;
 		
 }
 
@@ -42,8 +48,6 @@ html, body {
 	background: url('../images/purfect.jpg') no-repeat;
 	width: 40%;
 	float:left;
-	@include ImagePanel;
-	
 }
 
 #rightImagePanel{
@@ -75,9 +79,9 @@ html, body {
 }
 
 #leftTextPanel{
-	@include textPanel;
 	float:left;
-	margin-top: 15%;
+	width: 50%;
+	height: 100%;
 }
 
 #console {
@@ -160,7 +164,6 @@ footer {
 	text-align: center;
 	color: #ffcb02;
 	background: #222;
-	font-family:sans-serif; 
 	padding:20px 0;
 }
 
@@ -208,7 +211,6 @@ footer {
 	z-index: 2;
 	display: inline-block;
 	margin-bottom: -4px;
-	font-family:Oswald, sans-serif;
 	font-size: 1.7em;
 	color: #F7F7F7;
 	line-height: 130%;
@@ -222,15 +224,30 @@ footer {
 		display: inline-block;
 }
 
-button{
+h2 {
+	text-transform:uppercase;
+	 font-style:bold;
+}
+
+.social-call {
+	float: left;
+	width: 44%;
+	margin: 20px 3%;
+	height: 460px;
+	padding-top:1px;
+}
+
+a.button{
 	width:300px;
 	background: #3e9cbf; 
 	padding: 8px 14px 10px; 
 	border:1px solid #3e9cbf;
 	/*style the text*/
 	font-size:1.5em;
-	font-family:Oswald, sans-serif; /*Oswald is available from http://www.google.com/webfonts/specimen/Oswald*/
-	letter-spacing:.1em;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-style: bold;
+
 	text-shadow: 0 -1px 0px rgba(0, 0, 0, 0.3); 
 	color: #fff;
 	-webkit-box-shadow: inset 0px 1px 0px #3e9cbf, 0px 2px 0px 0px #205c73, 0px 2px 5px #999;
