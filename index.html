@@ -6,44 +6,27 @@
 		<script src="skrollr.min.js"></script>
 	</head>
 	<body>
-		<article id="console" data-0="background-color: rgb(54,54,54);" data-500="background-color:rgb(255,255,255);">
+		<article id="console">
 			<div class="console-black">
-				<div class="hero-content">		
-				<div class="terminal" data-0="opacity:1;" data-450="opacity:.001;">
-					<span class="terminal-line"></span>
-					<span class="terminal-line"></span>
-					<span class="terminal-line"></span>
-					<span class="terminal-line"></span>
-					<span class="terminal-line">$ cat &gt; hello</span>
-					<span class="terminal-line"> print "Hello World!" </span>
-					<span class="terminal-line"> ask("What is your name?") </span>
-					<span class="terminal-line"></span>
-					<span class="terminal-line">$ ./hello </span>
-					
-					<span class="terminal-line"> Hello World! </span>
-					<span class="terminal-line"> What is your name? ACM<span class="blink">|</span></span>
-				</div>											
-				
-				<div class="name-card"
-					data-0="opacity: .001; transform:scale(.8) rotate(-20deg);"
-					data-500="opacity: 1; transform:scale(1) rotate(5deg);opacity:1;"
-					>
-					<div class="top">
-						<span>Hello, my name is</span>
-					</div>
-					<div class="name">
-						ACM
-					</div>
+				<div class="hero-content" id="terminal-content">		
+					<div class="terminal" data-0="opacity:1;" data-450="opacity:.001;">
+						<span class="terminal-line"></span>
+						<span class="terminal-line">$ cat &gt; hello</span>
+						<span class="terminal-line"> print "Hello World!" </span>
+						<span class="terminal-line"> ask("What is your name?") </span>
+						<span class="terminal-line"></span>
+						<span class="terminal-line">$ ./hello </span>
+						
+						<span class="terminal-line"> Hello World! </span>
+						<span class="terminal-line"> What is your name? ACM<span class="blink">|</span></span>
+					</div>										
 				</div>
-				
-			</div>
 			</div>
 		</article>
 		<article class="infoBlock blue">
 			
 			<div class="hero-content">
-				<div id="leftImagePanel"></div>
-				<div id="rightTextPanel">
+				<div style="text-align:center; height:150px; margin:175px 0;">
 				<p>Next General Body Meeting: <br> Wednesday, Feb 4, 2015 <br> @ 2pm in ECS 304</p>
 				<span>Can't make the meeting? No biggie. Feel free to stop <br>by our office (EN3 110) at anytime</span>
 				</div>
@@ -53,21 +36,26 @@
 		<article class="infoBlock purple">
 			<div id="leftTextPanel">
 				<p>Check out the CSULB ACM GitHub repo<br> Feel free to contribute :)</p>
-				<button onclick="location.href='https://github.com/csulbacm'">Click meh!</button>
+				<button onclick="location.href='https://github.com/csulbacm'">Click Me!</button>
 			</div>
 				
-			<div id="rightImagePanel"></div>
+			<div id="rightImagePanel">
+				<img src="images/Octocat.png" alt="Octocat">
+			</div>
 		</article>
-		<article class="infoBlock officers">
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-		</article>
+
 		<footer>CSULB ACM Spring 2015</footer>
 		<script>
-			var s = skrollr.init();
+			(function onLoad (argument) {
+				var $console = document.getElementById('console');
+				var $hero = document.getElementById('terminal-content');
+				var windowHeight = window.innerHeight;
+				var contentHeight = $hero.offsetHeight;
+				console.log(windowHeight , contentHeight);
+				$console.style.height = windowHeight + 'px';
+				$hero.style.marginTop = (windowHeight - contentHeight)/2 + 'px';
+				var s = skrollr.init();
+			}());
 		</script>
 	</body>
 </html>
